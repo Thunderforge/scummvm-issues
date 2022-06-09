@@ -10,7 +10,7 @@ body:
     - label: I have searched the existing issues
       required: true
 - type: input
-  attrivutes:
+  attributes:
     label: Game/Engine/Component Name
     description: What are you reporting the issue for?
   validations:
