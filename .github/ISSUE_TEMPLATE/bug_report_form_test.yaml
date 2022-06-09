@@ -11,8 +11,21 @@ body:
       required: true
 - type: input
   attributes:
-    label: Game/Engine/Component Name
+    label: Game/Engine/Component Name (Freeform)
     description: What are you reporting the issue for?
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: Game Name (Dropdown)
+    description: What game are you reporting the issue for?
+    options:
+      - 11th Hour
+      - 3 Skulls of the Toltecs
+      - 7th Guest
+      - AGI Fangame
+      - "Amazon: Guardians of Eden"
+      - Backyard Baseball
   validations:
     required: false
 - type: textarea
