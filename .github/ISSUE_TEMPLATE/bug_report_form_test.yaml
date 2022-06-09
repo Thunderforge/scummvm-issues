@@ -47,9 +47,9 @@ body:
         - **ScummVM Version**: 2.6.0
         - **Game version**: VGA Floppy 1.1
     value: |
-        - Operating System:
-        - ScummVM Version:
-        - Game Version:
+        - Operating System: 
+        - ScummVM Version: 
+        - Game Version: 
     render: markdown
   validations:
     required: false
