@@ -72,9 +72,9 @@ body:
     description: What version of ScummVM are you running?
     multiple: false
     options:
-      - label: 2.5.1 (Stable)
-      - label: 2.6.0 (Pre-release)
-      - label: Daily
+      - 2.5.1 (Stable)
+      - 2.6.0 (Pre-release)
+      - Daily
   validations:
     required: true
 - type: textarea
