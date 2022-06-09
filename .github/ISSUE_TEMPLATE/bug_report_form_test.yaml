@@ -1,6 +1,5 @@
-name: Form-based bug test
+name: Bug report (form-based)
 description: File a bug/issue
-title: "[BUG] <title>"
 labels: [Bug, Needs Triage]
 body:
 - type: checkboxes
@@ -10,6 +9,12 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
+- type: input
+  attrivutes:
+    label: Game/Engine/Component Name
+    description: What are you reporting the issue for?
+  validations:
+    required: false
 - type: textarea
   attributes:
     label: Current Behavior
@@ -27,9 +32,9 @@ body:
     label: Steps To Reproduce
     description: Steps to reproduce the behavior.
     placeholder: |
-      1. In this environment...
-      2. With this config...
-      3. Run '...'
+      1. Load the saved game...
+      2. Click on this character...
+      3. Choose '...'
       4. See error...
   validations:
     required: false
@@ -38,22 +43,30 @@ body:
     label: Environment
     description: |
       examples:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
+        - **Operating System**: Windows 11
+        - **ScummVM Version**: 2.6.0
+        - **Game version**: VGA Floppy 1.1
     value: |
-        - OS:
-        - Node:
-        - npm:
+        - Operating System:
+        - ScummVM Version:
+        - Game Version:
     render: markdown
+  validations:
+    required: false
+- type: 
+- type: textarea
+  attributes:
+    label: Save games, screenshots, and logs
+    description: |
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      
+      Save games must be compressed as a `.zip` file.
   validations:
     required: false
 - type: textarea
   attributes:
     label: Anything else?
     description: |
-      Links? References? Anything that will give us more context about the issue you are encountering!
-
-      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      Anything that will give us more context about the issue you are encountering!
   validations:
     required: false
