@@ -66,9 +66,9 @@ body:
     render: markdown
   validations:
     required: false
-- type: checkboxes
+- type: dropdown
   attributes:
-    label: ScummVM Version (Radio)
+    label: ScummVM Version (Dropdown)
     description: What version of ScummVM are you running?
     multiple: false
     options:
